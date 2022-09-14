@@ -27,10 +27,10 @@ ref.btnStop.disabled = true;
 
 // Click btn Start & change color
 function onChangeColor() {
+  ref.btnStart.disabled = true;
+  ref.btnStop.disabled = false;
   timerId = setInterval(() => {
     ref.body.style.background = getRandomHexColor();
-    ref.btnStart.disabled = true;
-    ref.btnStop.disabled = false;
   }, 1000);
 }
 
